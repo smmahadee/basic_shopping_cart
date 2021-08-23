@@ -12,7 +12,7 @@ const extraMemory = document.querySelector(".extra_memory");
 const basicSsdStorage = document.querySelector('.basic_ssd_storage');
 const extra512Storage = document.querySelector(".medium_ssd_storage");
 const extra1tbStorage = document.querySelector(".big_ssd_storage");
-const normalDelivery = document.querySelector('.normalDelivery');
+const normalDelivery = document.querySelector('.normal_delivery');
 const quickDelivery = document.querySelector(".quick_delivery");
 const applyBtn = document.querySelector(".apply_btn");
 
