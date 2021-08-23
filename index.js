@@ -6,11 +6,16 @@ const deliveryCost = document.querySelector(".delivery_cost");
 const totalCost = document.querySelector(".total_cost");
 const couponCodeInput = document.querySelector(".couponCode");
 
+// All button defined
+const basicMemory = document.querySelector('.basic_memory');
 const extraMemory = document.querySelector(".extra_memory");
+const basicSsdStorage = document.querySelector('.basic_ssd_storage');
 const extra512Storage = document.querySelector(".medium_ssd_storage");
 const extra1tbStorage = document.querySelector(".big_ssd_storage");
 const quickDelivery = document.querySelector(".quick_delivery");
 const applyBtn = document.querySelector(".apply_btn");
+
+// variable and functions
 
 const price = {
   memoryCost: Number(memoryCost.textContent),
@@ -30,12 +35,21 @@ const price = {
 };
 
 // Memory Section
+basicMemory.addEventListener("click", function () {
+  memoryCost.textContent = 0;
+  price.updatePriceBox("memoryCost", 0);
+});
 extraMemory.addEventListener("click", function () {
   memoryCost.textContent = 180;
   price.updatePriceBox("memoryCost", 180);
 });
 
 //Storage Section
+
+basicSsdStorage.addEventListener("click", function () {
+  storageCost.textContent = 0;
+  price.updatePriceBox("storageCost", 0);
+});
 
 extra512Storage.addEventListener("click", function () {
   storageCost.textContent = 100;
@@ -66,5 +80,5 @@ applyBtn.addEventListener("click", function (e) {
   }
 
   price.updateTotalPrice();
-  couponCodeInput.value = '';
+  couponCodeInput.value = "";
 });
