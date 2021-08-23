@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+}
+
+
+
+h1,
+.btn_section,
+.table_section,
+.couponCode_section,
+.image_section {
+  padding: 20px;
+}
+p {
+  padding-left: 20px;
+  font-size: 14px;
+  width: 500px;
+}
+.btn_section h4 {
+  margin-bottom: 10px;
+}
+
+.btn_section button {
+  padding: 5px 15px;
+  margin: 5px;
+}
+
+td {
+  padding-right: 25px;
+  padding-bottom: 5px;
+}
+
+input,
+.apply_btn {
+  padding: 5px;
+}
