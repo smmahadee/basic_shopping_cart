@@ -12,6 +12,7 @@ const extraMemory = document.querySelector(".extra_memory");
 const basicSsdStorage = document.querySelector('.basic_ssd_storage');
 const extra512Storage = document.querySelector(".medium_ssd_storage");
 const extra1tbStorage = document.querySelector(".big_ssd_storage");
+const normalDelivery = document.querySelector('.normalDelivery');
 const quickDelivery = document.querySelector(".quick_delivery");
 const applyBtn = document.querySelector(".apply_btn");
 
@@ -33,6 +34,7 @@ const price = {
       memoryCost + storageCost + deliveryCost - couponCode + 1299;
   },
 };
+
 
 // Memory Section
 basicMemory.addEventListener("click", function () {
@@ -63,6 +65,10 @@ extra1tbStorage.addEventListener("click", function () {
 
 //Delivery Section
 
+normalDelivery.addEventListener("click", function () {
+  deliveryCost.textContent = 0;
+  price.updatePriceBox("deliveryCost", 0);
+});
 quickDelivery.addEventListener("click", function () {
   deliveryCost.textContent = 20;
   price.updatePriceBox("deliveryCost", 20);
